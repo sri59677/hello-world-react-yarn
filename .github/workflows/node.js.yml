@@ -23,5 +23,7 @@ jobs:
         uses: c-hive/gha-yarn-cache@v1
       - name: Install dependencies
         run: yarn install --frozen-lockfile
+      - name: running
+        run: yarn start  
       - name: Build Project
         run: yarn build
