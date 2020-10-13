@@ -22,6 +22,6 @@ jobs:
       - name: Restore Yarn Package Cache
         uses: c-hive/gha-yarn-cache@v1
       - name: Install dependencies
-        run: yarn --frozen-lockfile
+        run: yarn install --frozen-lockfile
       - name: Build Project
         run: yarn build
